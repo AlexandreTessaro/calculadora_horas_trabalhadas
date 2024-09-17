@@ -8,7 +8,7 @@ def calcular_horas_trabalhadas(inicio, fim):
     if hora_inicio and hora_fim:
         horas_trabalhadas = (hora_fim - hora_inicio).seconds / 3600
         if horas_trabalhadas < 0:
-            horas_trabalhadas += 24  # Para casos onde fim é no dia seguinte
+            horas_trabalhadas += 24 
         return horas_trabalhadas
     return None
 
@@ -27,5 +27,5 @@ def calcular_horas_invertido(inicio, fim):
         return None
     
     if horas_trabalhadas < 0:
-        horas_trabalhadas += 24  # Ajuste para horários invertidos
+        horas_trabalhadas += 24  
     return horas_trabalhadas

@@ -7,7 +7,7 @@ class TestCalculadoraHoras(unittest.TestCase):
     def test_validar_horario(self):
         from src.formatacao import validar_horario
         self.assertIsNotNone(validar_horario("08:00"))
-        self.assertIsNone(validar_horario("25:00"))  # Horário inválido
+        self.assertIsNone(validar_horario("25:00"))  
 
     def test_calcular_horas_trabalhadas(self):
         self.assertEqual(calcular_horas_trabalhadas("08:00", "17:00"), 9)

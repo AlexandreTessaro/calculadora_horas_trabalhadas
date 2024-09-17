@@ -8,9 +8,9 @@ def validar_horario(horario):
         return None
 
 def formatar_horario_sem_pontos(horario):
-    if len(horario) == 4:  # Exemplo: "0800" -> "08:00"
+    if len(horario) == 4:  
         return f"{horario[:2]}:{horario[2:]}"
-    elif len(horario) == 3:  # Exemplo: "800" -> "08:00"
+    elif len(horario) == 3:  
         return f"0{horario[:1]}:{horario[1:]}"
     else:
         print("Erro: Formato de horário inválido.")
