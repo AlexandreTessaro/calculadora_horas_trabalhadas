@@ -11,7 +11,7 @@ class TestCalculadoraHoras(unittest.TestCase):
 
     def test_calcular_horas_trabalhadas(self):
         self.assertEqual(calcular_horas_trabalhadas("08:00", "17:00"), 9)
-        self.assertEqual(calcular_horas_invertido("17:00", "08:00"), 15)  # Horário invertido
+        self.assertEqual(calcular_horas_invertido("17:00", "08:00"), 15)  
 
     def test_calcular_horas_com_intervalo(self):
         self.assertEqual(calcular_horas_com_intervalo("08:00", "17:00", "01:00"), 8)
